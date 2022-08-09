@@ -48,7 +48,7 @@ You can see what the password is by checking the very beginning of the docker lo
 
 The logs should look something like this:
 
-![Example logs with the user and password](documentation/Example Password Output.png)
+![Example logs with the user and password](documentation/ExamplePasswordOutput.png)
 
 Alternatively, you can reset the RPC password by running the `resetRpcPassword.sh` script on the container
 
