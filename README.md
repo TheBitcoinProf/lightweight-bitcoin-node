@@ -70,9 +70,87 @@ IMPORTANT! Whenever you change the password (or user), make sure to restart the 
 
 ## Advantages of running (and using) a Bitcoin node
 
-1. You verify transactions yourself rather than trusting some
-   (usually) unknown person to verify them for you.
-2. You don't tell other people which transactions are yours
-3. You contribute to the decentralisation and security of the whole Bitcoin network
-4. You learn a lot about Bitcoin
-5. You have something to brag about in front of your nerd friends
+1. [You don't tell other people which transactions are yours](#dont-expose-your-transactions)
+2. [You verify transactions yourself rather than trusting some
+   (usually) unknown person to verify them for you](#dont-trust-verify)
+3. [You contribute to the decentralisation and security of the whole Bitcoin network](#secure-the-network)
+4. [You learn a lot about Bitcoin](#learn-about-bitcoin)
+5. [You have something to brag about in front of your nerd friends](#bragging-rights)
+
+### Don't Expose Your Transactions
+
+Anytime you send some Bitcoin, the transaction has to be somehow propagated to 
+the wider Bitcoin network, so that all participants, and especially miners, know about it and include it in the blockchain.
+
+The only way for a transaction to enter the network is for it to be sent around by Bitcoin nodes.
+
+When you, for example, send some Bitcoin from your Ledger (although you shouldn't ever do that because #HODL),
+you enter the destination address, the amount, fees, etc., and then your wallet sends out this transaction to the
+Bitcoin network.
+
+However, since you don't have a Bitcoin node, your wallet will first send the transaction to the Ledger servers, 
+which do have a Bitcoin node, and then from there your transaction will be propagated to the rest of the world.
+
+This means that Ledger servers have a record of every transaction you make, tied to your IP. In practice this means that
+the wallet you use is able to tie your identity to your transactions.
+
+Unless you use your own Bitcoin node, your transactions are exposed.
+
+
+### Don't Trust, Verify
+
+Even if you use a noncustodial wallet, like Coinomi, Ledger, Bluewallet, etc., where you hold your own keys, you are still
+relying on someone else to tell you how many coins you currently have in your wallet.
+
+Every time you open your wallet, it asks, for example, the Ledger servers:
+
+`"What is the balance of this Bitcoin wallet with these Bitcoin addresses?"`
+
+And since the Ledger servers have a Bitcoin full node running, they can check this and tell your wallet to display
+the appropriate amount.
+
+If you aren't running a Bitcoin node yourself, you cannot know for sure that this balance is correct. You have to trust
+Ledger that:
+
+A) They aren't being malicious
+
+B) They have not been hacked or otherwise compromised
+
+C) They don't have a bug in their system
+
+However, when you run your own node, you can point your wallet to use that as its point of reference, rather
+than some unknown server run by a stranger. 
+
+### Secure the Network
+
+Bitcoin's security and resiliency from outside attacks relies largely on various forms of decentralisation.
+
+One crucial aspect of Bitcoin's security is the fact that tens of thousands of network participants independently verify
+blocks to eliminate any bad actors or faulty transactions. 
+
+By running a Bitcoin node you help everyone by constantly checking that the Bitcoin network is functioning correctly.
+
+Furthermore, you become yet another good actor in the space, making the network more resistant to hacker attacks and
+tyrannical government crackdowns.
+
+In order to take down the Bitcoin network, a bad actor would have to take down every single Bitcoin node. By adding one 
+to the system, you make this even more impossible to do.
+
+### Learn about Bitcoin
+
+We all know that fully understanding how Bitcoin works is virtually impossible. It's quite normal to re-read the same 
+article 5 times, in order to understand what a blockchain is.
+
+Learning in practice, rather than in theory, is far more fun and effective. Running your own node allows you to 
+learn a lot about how Bitcoin works, pretty much by accident. 
+
+It is much easier than it sounds, and will make you much more confident when using Bitcoin and 
+explaining it to your mother-in-law.
+
+### Bragging Rights
+
+Once you have that beautiful Bitcoin node running, you can talk to your Bitcoin friends with a justified tone
+of superiority, since now you are officially, objectively, better than them.
+
+Remember to turn every conversation into a purity test to try and determine who is a Real Bitcoiner.
+You are sure to win every time.
