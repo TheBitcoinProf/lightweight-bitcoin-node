@@ -154,3 +154,11 @@ of superiority, since now you are officially, objectively, better than them.
 
 Remember to turn every conversation into a purity test to try and determine who is a Real Bitcoiner.
 You are sure to win every time.
+
+## Donate
+
+If you like this project and want to see more development, please consider donating to:
+
+`bc1p9rmge4p43umvr9ulu3g25ve4m524d6mya2y5q8f69m929c9nctfsx5zc2k`
+
+![Bitcoin address QR code](documentation/QRCode.jpeg)
