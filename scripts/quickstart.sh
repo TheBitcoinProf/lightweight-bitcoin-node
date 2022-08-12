@@ -1,5 +1,6 @@
+set -e
 
-echo "Downloading latest version of the pruned blockchain..."
+echo "Downloading the latest version of the pruned blockchain..."
 
 curl -L -o /tmp/blockchain.zip https://prunednode.today/latest.zip
 unzip /tmp/blockchain.zip
